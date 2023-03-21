@@ -13,6 +13,6 @@ ADD https://github.com/shadowsocks/shadowsocks-go/releases/download/${version}/s
 
 RUN tar -zxvf /ss.tar.gz -O > /ss
 RUN chmod 777 /ss
-
+EXPOSE 443
 # Configure container to run as an executable
 ENTRYPOINT ["/ss"]
